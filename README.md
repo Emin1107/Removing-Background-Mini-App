@@ -10,8 +10,8 @@
 
 ## Preview
 
-![App Preview](https://your-image-url-here.com/preview.png)  
-*Example of before/after image preview in the app*
+![App Preview](/Assets/before.png)  
+![App Preview](/Assets/after.png)
 
 ---
 
