@@ -40,6 +40,7 @@
 
 - Python 3.7+
 - Install the required libraries:
+
   ```bash
   pip install rembg pillow
   ```
