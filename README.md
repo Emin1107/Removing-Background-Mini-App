@@ -1,7 +1,7 @@
 # Remove Background – Desktop Image Tool (Tkinter + Python)
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue?logo=python)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 **Remove Background** is a simple yet powerful desktop application built with Python and the Tkinter GUI library. It allows users to easily remove backgrounds from images (JPEG/PNG) using the powerful `rembg` library. Perfect for freelancers, designers, developers, and anyone working with images.
