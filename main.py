@@ -72,28 +72,32 @@ def outputPicture(savePath):
 
 #### Saving the cutted image ####
 def saveImage(file):
-# Setting a unique output file name with the exact date of the uploading #
-    saveDir = "saved_pics"
+# Setting the output directory to the specified path #
+    saveDir = r"saved_pics"
     if not os.path.exists(saveDir):
         os.makedirs(saveDir)
     
     timestamp = datetime.now().strftime('%d%m%Y%H%M%S')
-    savePath = f'saved_pics/output_{timestamp}.png'
+    savePath = os.path.join(saveDir, f'output_{timestamp}.png')
     file.save(savePath)
     
 # Function that outputs the pic to the app screen
     outputPicture(savePath)
 
 
+
 #### Main window ####
 root = tk.Tk()
 root.title("Emin Hodzic <> Remove background")
-root.iconbitmap('C:/Python Project/Delete the bg from a picture/Assets//e.ico')
+#root.iconbitmap('/Assets//e.ico')
 
 # Using themes #
 style = ttk.Style(root)
-root.tk.call("source", "Assets/forest-dark.tcl")
-style.theme_use("forest-dark")
+try:
+    root.tk.call("source", "Assets/forest-dark.tcl")
+    style.theme_use("forest-dark")
+except tk.TclError:
+    pass
 
 #### Puts the window in the center, slightly in the north position of the screen ####
 centerWindow(1000, 500)
@@ -107,6 +111,5 @@ frame.pack(pady=30, padx=30)
 #### Input button ####
 inputButton = ttk.Button(frame, text="Upload an Image", command=inputPicture)
 inputButton.grid(row=1, column=1, padx=10, pady=10)
-
 
 root.mainloop()
