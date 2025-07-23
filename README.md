@@ -82,7 +82,6 @@ python main.py
 
 **Emin Hodžić**  
 Software Engineering and Management student at TU Graz.  
-Currently team leader in the *AI Energy Management System* project.  
 Experienced in web development (WordPress), image editing, and Python GUI applications.  
 Created this tool as part of a self-learning journey and client-focused solutions.
 
@@ -95,5 +94,3 @@ For collaboration or freelance work, feel free to get in touch via [LinkedIn](ht
 This project is licensed under the **Apache License** – free to use, modify, and distribute.
 
 ---
-
-*Made with Python, curiosity, and a bit of design flair.*
